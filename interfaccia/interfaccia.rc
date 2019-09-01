@@ -1,0 +1,311 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 16, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\interfaccia.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.ita\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INTERFACCIA_DIALOG DIALOGEX 0, 0, 417, 316
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Ares by Mancuso Raffaele"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "New game",IDOK,263,6,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,263,38,50,14
+    GROUPBOX        "Graphic settings",IDC_STATIC,27,53,353,117,BS_CENTER
+    LTEXT           "Resolution",IDC_STATIC,38,93,39,9
+    COMBOBOX        IDC_RESOLUTION,88,94,68,47,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Bit of colour",IDC_STATIC,35,118,42,11
+    CONTROL         "Fullscreen",IDC_FULLSCREEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,65,48,10
+    CONTROL         "Antialiasing",IDC_ANTIALIAS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,79,52,12
+    CONTROL         "Realtime shadow",IDC_STENCYLBUFFER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,240,120,75,10
+    CONTROL         "Vsync",IDC_VSYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    183,97,36,8
+    LTEXT           "Render",IDC_STATIC,38,73,29,10
+    COMBOBOX        IDC_RENDER,87,73,86,50,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Audio settings",IDC_STATIC,15,205,151,103,BS_CENTER
+    CONTROL         "Play user tracks",IDC_PLAY_UT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,215,67,10
+    LTEXT           "User tracks volume",IDC_STATIC,20,230,64,12
+    EDITTEXT        IDC_UTVOLUME,90,230,35,12,ES_AUTOHSCROLL
+    LTEXT           "Default level:",IDC_STATIC,185,220,57,9
+    COMBOBOX        IDC_LEVEL_TO_START,185,230,130,75,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_ARESCOPINFO,93,13,134,23
+    COMBOBOX        IDC_BIT_OF_COLOUR,81,114,80,42,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "How to play backgroud music?",IDC_STATIC,20,245,105,9
+    COMBOBOX        IDC_UTHOWTOPLAY,20,260,96,41,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open user tracks directory",IDC_BUTTON1,30,280,129,20
+    PUSHBUTTON      "Open level editor",ID_OPENLEVELEDITOR,263,22,62,14
+    EDITTEXT        IDC_EXTER_LEVEL_EDIT,185,265,158,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_USER_LEVEL_BROWSE,225,290,78,15
+    LTEXT           "Extern level:",IDC_STATIC,185,255,122,10
+    GROUPBOX        "Choose a level",IDC_STATIC,180,195,175,120,BS_CENTER
+    CONTROL         "Default level",IDC_DEFAULT_LEVEL_TO_START,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,205,60,10
+    CONTROL         "User level",IDC_USER_LEVEL_TO_START,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,260,205,50,10
+    COMBOBOX        IDC_TEXTUREQUALITYCOMBOBOX,290,80,75,40,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Texture quality",IDC_STATIC,290,65,80,10
+    GROUPBOX        "Advanced graphic",IDC_STATIC,235,105,115,50,BS_CENTER
+    CONTROL         "Specular hightlights",IDC_SPECULARHIGHTLIGHTS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,240,135,75,10
+    CONTROL         "High precision FPU (directx only,recommended)",
+                    IDC_HIGHTPRECISIONFPU,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,35,145,170,10
+    CONTROL         137,IDC_STATIC,"Static",SS_BITMAP,15,15,59,19
+END
+
+IDD_LICENSEDIALOG DIALOG DISCARDABLE  0, 0, 317, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDYES,60,135,50,14
+    PUSHBUTTON      "No",IDNO,125,135,50,14
+    LTEXT           "",IDC_LICENSETEXT,15,5,290,105
+    LTEXT           "Do you accept all the terms and the whole condition of this license?",
+                    IDC_STATIC,20,120,245,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041004B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "interfaccia Applicazione MFC\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "interfaccia\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "interfaccia.EXE\0"
+            VALUE "ProductName", "interfaccia Applicazione\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x410, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "irrlichtlogo.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_INTERFACCIA_DIALOG DLGINIT
+BEGIN
+    IDC_RESOLUTION, 0x403, 8, 0
+0x3038, 0x7830, 0x3036, 0x0030, 
+    IDC_RESOLUTION, 0x403, 9, 0
+0x3031, 0x3432, 0x3778, 0x3836, "\000" 
+    IDC_RENDER, 0x403, 13, 0
+0x6944, 0x6572, 0x7463, 0x2078, 0x2e39, 0x6330, "\000" 
+    IDC_RENDER, 0x403, 12, 0
+0x6944, 0x6572, 0x7463, 0x2078, 0x2e38, 0x0031, 
+    IDC_RENDER, 0x403, 11, 0
+0x704f, 0x6e65, 0x6c67, 0x3120, 0x352e, "\000" 
+    IDC_RENDER, 0x403, 23, 0
+0x7041, 0x6566, 0x626c, 0x7561, 0x206d, 0x6f73, 0x7466, 0x6177, 0x6572, 
+0x3120, 0x302e, "\000" 
+    IDC_RENDER, 0x403, 22, 0
+0x7249, 0x6c72, 0x6369, 0x7468, 0x7320, 0x666f, 0x7774, 0x7261, 0x2065, 
+0x2e31, 0x0030, 
+    IDC_BIT_OF_COLOUR, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_BIT_OF_COLOUR, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_UTHOWTOPLAY, 0x403, 9, 0
+0x6143, 0x7573, 0x6c61, 0x796c, "\000" 
+    IDC_UTHOWTOPLAY, 0x403, 13, 0
+0x6553, 0x7571, 0x6e65, 0x6974, 0x6c61, 0x796c, "\000" 
+    IDC_TEXTUREQUALITYCOMBOBOX, 0x403, 21, 0
+0x704f, 0x6974, 0x696d, 0x657a, 0x6620, 0x726f, 0x7120, 0x6175, 0x696c, 
+0x7974, "\000" 
+    IDC_TEXTUREQUALITYCOMBOBOX, 0x403, 19, 0
+0x704f, 0x6974, 0x696d, 0x657a, 0x6620, 0x726f, 0x7320, 0x6570, 0x6465, 
+"\000" 
+    IDC_TEXTUREQUALITYCOMBOBOX, 0x403, 7, 0
+0x3233, 0x6220, 0x7469, "\000" 
+    IDC_TEXTUREQUALITYCOMBOBOX, 0x403, 7, 0
+0x3631, 0x6220, 0x7469, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_LICENSEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Infor&mazioni su interfaccia..."
+END
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "idr_main.ico"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE 16, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\interfaccia.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.ita\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

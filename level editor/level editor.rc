@@ -1,0 +1,809 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\level editor.ico"
+IDR_LEVELTYPE           ICON    DISCARDABLE     "res\\level editorDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+    BUTTON      ID_BUTTON32795
+    BUTTON      ID_BUTTON32804
+    SEPARATOR
+    BUTTON      ID_BUTTON32805
+    SEPARATOR
+    BUTTON      ID_BUTTON32806
+    BUTTON      ID_BUTTON32807
+    BUTTON      ID_BUTTON32808
+    SEPARATOR
+    BUTTON      ID_BUTTON32796
+    BUTTON      ID_BUTTON32791
+    BUTTON      ID_FILE_PRINT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Save\tCtrl+S",                ID_FILE_SAVE
+        MENUITEM "Save as...",                  ID_FILE_SAVE_AS
+        MENUITEM "Export to irr",               ID_FILE_EXPORT_IRR
+        MENUITEM SEPARATOR
+        MENUITEM "View file",                   ID_FILE_VIEW_FILE
+        MENUITEM "Reload",                      ID_FILE_RELOAD
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "Insert"
+    BEGIN
+        MENUITEM "Model",                       ID_INSERT_MODEL
+        MENUITEM "Model from zip",              ID_INSERT_MODEL_FROM_ZIP_FILE
+
+        POPUP "Monster"
+        BEGIN
+            MENUITEM "Falgat",                      ID_INSERT_MONSTER_FALGAT
+            MENUITEM "Rhino",                       ID_INSERT_MONSTER_RHINO
+            MENUITEM "Zombie",                      ID_INSERT_MONSTER_ZOMBIE
+        END
+        MENUITEM "Medikit",                     ID_INSERT_MEDIKIT
+        POPUP "Ammunation"
+        BEGIN
+            MENUITEM "Shot gun",                    ID_INSERT_AMMUNATION_SHOTGUN
+
+            MENUITEM "Machine gun",                 ID_INSERT_AMMUNATION_MACHINEGUN
+
+            MENUITEM "Rifle gun",                   ID_INSERT_AMMUNATION_RIFLEGUN
+
+        END
+        MENUITEM "Light",                       ID_INSERT_LIGHT
+        MENUITEM "Terrain",                     ID_INSERT_TERRAIN
+        MENUITEM "Armour",                      ID_INSERT_ARMOUR
+    END
+    POPUP "Object"
+    BEGIN
+        MENUITEM "Propietaries",                IDD_OBJ_PROPIETARIES
+        MENUITEM "Modify Pos\\Rot\\Scale",      ID_OBJECT_POSROTSCALESHOW
+    END
+    POPUP "World"
+    BEGIN
+        MENUITEM "Active\\deactive diffuse light", 
+                                                ID_WORLD_ACTIVEDIFFUSELIGHT
+        MENUITEM "Sky box propietaries",        ID_WORLD_SKYBOXPROPIETARIES
+        MENUITEM "Directional lights",          ID_WORLD_DIRECTIONAL_LIGHT
+    END
+    POPUP "Camera"
+    BEGIN
+        MENUITEM "On\\off FPS camera",          ID_CAMERA_ONOFFFPSCAM
+        MENUITEM "Set pos like weapon",         ID_CAMERA_SETPOSLIKEWEAPON
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About level editor...",      ID_APP_ABOUT
+    END
+END
+
+IDR_CNTR_INPLACE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_CNTR_INPLACE ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 205, 41
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About level editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Ares' level editor ",IDC_STATIC,7,7,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006 Mancuso Raffaele",IDC_STATIC,7,26,
+                    119,8
+    DEFPUSHBUTTON   "OK",IDOK,139,18,50,14,WS_GROUP
+END
+
+IDR_MAINFRAME DIALOG DISCARDABLE  0, 0, 5, 5
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDR_POSROTSCALEDIALOG DIALOG DISCARDABLE  0, 0, 203, 123
+STYLE DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Set position\\rotation\\scale"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ROTY,61,47,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROTZ,111,45,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROTX,16,47,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALEX,26,70,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSX,17,15,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSY,61,14,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSZ,107,14,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALEY,79,70,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCALEZ,127,67,40,12,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,25,0,10,10
+    LTEXT           "Y",IDC_STATIC,70,0,10,10
+    LTEXT           "Z",IDC_STATIC,121,0,10,10
+    LTEXT           "Pos",IDC_STATIC,0,18,20,10
+    LTEXT           "Rot",IDC_STATIC,0,48,20,10
+    LTEXT           "Scale",IDC_STATIC,2,73,20,10
+    PUSHBUTTON      "Ok",IDC_BUTTON1,76,93,70,14
+    PUSHBUTTON      "Update",IDC_BUTTON2,25,97,43,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,1,0,0
+ PRODUCTVERSION 0,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Mancuso Raffaele\0"
+            VALUE "FileDescription", "Ufficial level editor for Ares\0"
+            VALUE "FileVersion", "0, 1, 0, 0\0"
+            VALUE "InternalName", "Ares' level editor\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006 Mancuso Raffaele\0"
+            VALUE "LegalTrademarks", "None\0"
+            VALUE "OriginalFilename", "level editor.EXE\0"
+            VALUE "PrivateBuild", "?\0"
+            VALUE "ProductName", "Ares' level editor\0"
+            VALUE "ProductVersion", "0, 3, 0, 0\0"
+            VALUE "SpecialBuild", "??\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDR_POSROTSCALEDIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 198
+        BOTTOMMARGIN, 111
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Ares' level editor\n\nLevel\nAres Level Files (*.aresm2)\n.aresm2\nLeveleditor.Document\nLevel Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Ares' level editor"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source\nPaste Link"
+    ID_EDIT_PASTE_SPECIAL   "Insert Clipboard contents with options\nPaste Special"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Insert new embedded object\nNew Object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects\nEdit Links"
+    ID_OLE_EDIT_CONVERT     "Convert object to different type\nConvert Object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+    57873                   "Activate embedded or linked object"
+    57874                   "Activate embedded or linked object"
+    57875                   "Activate embedded or linked object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MYSAVE          "Save the active document\nSave"
+    ID_FILE_MYSAVEAS        "Save the active document into a selected file\nSave as"
+    ID_FILE_VIEW_FILE       "View the file .aresm2 wich is write if you save the level\nView file"
+    ID_FILE_RELOAD          "Reload the saved file if you change it"
+    ID_WORLD_ADD_DEFAULT_SKY_BOX "Add a default sky"
+    ID_WORLD_USER_SKY_BOX   "Add a sky box wich textures are specified by the user"
+    ID_WORLD_REMOVE_SKY_BOX "Remove the current sky box"
+    ID_WORLD_ACTIVE_DEACTIVE_DIFFUSE_LIGHT 
+                            "Active or deactive the diffuse lighting. Only if this is deactive the light take effect"
+    ID_INSERT_MODEL         "Insert a 3d model from a file"
+    ID_INSERT_MEDIKIT       "Insert a medikit"
+    ID_INSERT_AMMUNATION    "Insert a munation"
+    ID_INSERT_LIGHT         "Insert a light. Only if diffuse light is deactive (see world->active diffuse light) "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INSERT_TERRAIN       "Insert a terrain from a heightmap file"
+    ID_INSERT_MONSTER       "Insert a enemie"
+    ID_INSERT_MONSTER_FALGAT "Insert a falgat enemie"
+    ID_INSERT_MONSTER_RHINO "Insert a rhino monster"
+    ID_WORLD_ACTIVEDIFFUSELIGHT 
+                            "Active or deactive diffuse lighting. Just if diffuse light is deactive the lights take effect"
+    ID_WORLD_SKYBOXPROPIETARIES "Show a sky box propietaries window"
+    IDD_OBJ_PROPIETARIES    "Propietaries of an object"
+    ID_INSERT_ARMOUR        "Insert an armour"
+    ID_INSERT_MONSTER_ZOMBIE "Add a zombie enemy"
+    ID_INSERT_AMMUNATION_SHOTGUN "Insert a munation for shot gun"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INSERT_AMMUNATION_MACHINEGUN "Insert a munation for machine gun"
+    ID_INSERT_AMMUNATION_RIFLEGUN "Insert a muntions for rifle gun"
+    ID_INSERT_MODEL_FROM_ZIP_FILE "Insert a model from a zip file"
+    ID_CAMERA_SETPOSLIKEWEAPON 
+                            "Set the position of the camera the same the position of the weapon"
+    ID_FILE_EXPORT_IRR      "Export the current scene to an irr file, openable with IrrEdit"
+    ID_WORLD_DIRECTIONAL_LIGHT "Insert\\modify a directional light"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_USER_DEFINED_SKY_BOX DIALOG DISCARDABLE  0, 0, 268, 150
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "User defined sky box"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,103,131,50,14
+    LTEXT           "Top",IDC_STATIC,7,7,18,8
+    LTEXT           "Bottom",IDC_STATIC,7,27,27,8
+    LTEXT           "Left",IDC_STATIC,7,45,15,8
+    LTEXT           "Right",IDC_STATIC,7,65,19,8
+    LTEXT           "Front",IDC_STATIC,7,87,19,8
+    LTEXT           "Back",IDC_STATIC,7,109,17,8
+    EDITTEXT        IDC_TOP_EDIT,35,7,137,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEFT_EDIT,35,42,137,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RIGHT_EDIT,35,62,137,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRONT_EDIT,35,85,137,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BACK_EDIT,35,108,137,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOTTOM_EDIT,35,25,137,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_TOP_BROWSE,178,7,48,13
+    PUSHBUTTON      "Browse...",IDC_BOTTOM_BROWSE,178,23,48,13
+    PUSHBUTTON      "Browse...",IDC_LEFT_BROWSE,178,41,48,13
+    PUSHBUTTON      "Browse...",IDC_RIGHT_BROWSE,178,61,48,13
+    PUSHBUTTON      "Browse...",IDC_FRONT_BROWSE,178,85,48,13
+    PUSHBUTTON      "Browse...",IDC_BACK_BROWSE,178,108,48,13
+END
+
+IDD_AMMUNATION_PROP DIALOG DISCARDABLE  0, 0, 164, 65
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Ammunation propietaries"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,51,34,50,14
+    LTEXT           "Number of bullets",IDC_STATIC,15,15,57,10
+    EDITTEXT        IDC_NUM_OF_BULLET,77,13,66,12,ES_AUTOHSCROLL
+END
+
+IDD_MEDIKIT_PROP DIALOG DISCARDABLE  0, 0, 164, 65
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Ammunation propietaries"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,51,34,50,14
+    LTEXT           "Life to reload",IDC_STATIC,15,15,57,10
+    EDITTEXT        IDC_LIFEVALUE,77,13,66,12,ES_AUTOHSCROLL
+END
+
+IDD_ARMOUR_PROP DIALOG DISCARDABLE  0, 0, 164, 65
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Amour propietaries"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,51,34,50,14
+    LTEXT           "Armour in %",IDC_STATIC,15,15,57,10
+    EDITTEXT        IDC_NUM_OF_BULLET,77,13,66,12,ES_AUTOHSCROLL
+END
+
+IDD_INSERTMODELFROMZIP DIALOG DISCARDABLE  0, 0, 316, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Insert model from zip"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,71,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,136,74,50,14
+    EDITTEXT        IDC_ZIPFILE,39,15,131,12,ES_AUTOHSCROLL
+    LTEXT           "Zip file",IDC_STATIC,7,16,38,9
+    PUSHBUTTON      "Browse",IDC_BUTTON1,180,15,56,12
+    LTEXT           "Model",IDC_STATIC,7,33,29,8
+    EDITTEXT        IDC_MODEL,39,31,64,12,ES_AUTOHSCROLL
+    LTEXT           "Texture",IDC_STATIC,7,49,30,9
+    EDITTEXT        IDC_TEXTURE,41,48,66,11,ES_AUTOHSCROLL
+END
+
+IDD_LIGHTPROPIETARIES DIALOG DISCARDABLE  0, 0, 152, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Light propietaries"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,40,50,14
+    LTEXT           "Ray",IDC_STATIC,10,15,15,10
+    EDITTEXT        IDC_LIGHTRAY,40,15,65,12,ES_AUTOHSCROLL
+END
+
+IDD_DIRECTIONALLIGHT DIALOG DISCARDABLE  0, 0, 186, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Directional lights propietaries"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,70,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,70,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_USER_DEFINED_SKY_BOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_AMMUNATION_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_MEDIKIT_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_ARMOUR_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_INSERTMODELFROMZIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_LIGHTPROPIETARIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_DIRECTIONALLIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\level editor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SKY_BOX_PROP DIALOG DISCARDABLE  0, 0, 186, 90
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sky box propietaries"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,54,69,50,14
+    COMBOBOX        IDC_SKY_BOX,21,20,90,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SKY_BOX_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SKY_BOX_PROP DLGINIT
+BEGIN
+    IDC_SKY_BOX, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_SKY_BOX, 0x403, 16, 0
+0x6544, 0x6166, 0x6c75, 0x2074, 0x6b73, 0x2079, 0x6f62, 0x0078, 
+    IDC_SKY_BOX, 0x403, 21, 0
+0x7355, 0x7265, 0x6420, 0x6665, 0x6e69, 0x6465, 0x7320, 0x796b, 0x6220, 
+0x786f, "\000" 
+    0
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\level editor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxolecl.rc"       // OLE container resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

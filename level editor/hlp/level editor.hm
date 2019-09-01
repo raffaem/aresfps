@@ -1,0 +1,64 @@
+ 
+// Commands (ID_* and IDM_*) 
+HID_CANCEL_EDIT_CNTR                    0x18000
+HID_FILE_MYSAVE                         0x18004
+HID_FILE_MYSAVEAS                       0x18005
+HID_FILE_VIEW_FILE                      0x18006
+HID_FILE_RELOAD                         0x18007
+HID_WORLD_ADD_DEFAULT_SKY_BOX           0x18008
+HID_WORLD_USER_SKY_BOX                  0x18009
+HID_WORLD_REMOVE_SKY_BOX                0x1800A
+HID_WORLD_ACTIVE_DEACTIVE_DIFFUSE_LIGHT 0x1800B
+HID_INSERT_MODEL                        0x1800C
+HID_INSERT_MEDIKIT                      0x1800D
+HID_INSERT_AMMUNATION                   0x1800E
+HID_INSERT_LIGHT                        0x1800F
+HID_INSERT_TERRAIN                      0x18010
+HID_INSERT_MONSTER                      0x18011
+HID_INSERT_MONSTER_FALGAT               0x18012
+HID_INSERT_MONSTER_RHINO                0x18013
+HID_WORLD_ACTIVEDIFFUSELIGHT            0x18014
+HID_WORLD_SKYBOXPROPIETARIES            0x18015
+HID_BUTTON32791                         0x18017
+HID_CAMERA_ONOFFFPSCAM                  0x1801A
+HID_BUTTON32795                         0x1801B
+HID_BUTTON32796                         0x1801C
+HID_INSERT_ARMOUR                       0x1801D
+HID_INSERT_MONSTER_ZOMBIE               0x1801E
+HID_INSERT_AMMUNATION_SHOTGUN           0x1801F
+HID_INSERT_AMMUNATION_MACHINEGUN        0x18020
+HID_INSERT_AMMUNATION_RIFLEGUN          0x18021
+HID_OBJECT_POSROTSCALESHOW              0x18022
+HID_INSERT_MODEL_FROM_ZIP_FILE          0x18023
+HID_BUTTON32804                         0x18024
+HID_BUTTON32805                         0x18025
+HID_BUTTON32806                         0x18026
+HID_BUTTON32807                         0x18027
+HID_BUTTON32808                         0x18028
+HID_CAMERA_SETPOSLIKEWEAPON             0x18029
+HID_FILE_EXPORT_IRR                     0x1802A
+HID_WORLD_DIRECTIONAL_LIGHT             0x1802B
+ 
+// Prompts (IDP_*) 
+HIDP_OLE_INIT_FAILED                    0x30064
+HIDP_FAILED_TO_CREATE                   0x30066
+ 
+// Resources (IDR_*) 
+HIDR_CNTR_INPLACE                       0x20006
+HIDR_MAINFRAME                          0x20080
+HIDR_LEVELTYPE                          0x20081
+HIDR_POSROTSCALEDIALOG                  0x20088
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_SKY_BOX_PROP                       0x20082
+HIDD_USER_DEFINED_SKY_BOX               0x20084
+HIDD_AMMUNATION_PROP                    0x20085
+HIDD_MEDIKIT_PROP                       0x20086
+HIDD_ARMOUR_PROP                        0x20087
+HIDD_INSERTMODELFROMZIP                 0x20089
+HIDD_LIGHTPROPIETARIES                  0x2008A
+HIDD_DIRECTIONALLIGHT                   0x2008B
+HIDD_OBJ_PROPIETARIES                   0x28018
+ 
+// Frame Controls (IDW_*) 
