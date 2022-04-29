@@ -1,0 +1,45 @@
+ver 0.3
+diffuselight yes
+weapon -607.889,182.734,2251.05 -178
+camera -625.258,-143.502,663.031 0,0,0
+addzip waterworld.zip
+levelmodel waterworld.x noTexture 45,0,0 0,0,0 1,1,1
+falgat -603.077,57,912.094 -180
+falgat -423.487,296,-45.8975 -212
+falgat -440.3,224.316,-309.95 -343
+falgat -1397.09,56,-328.168 -148
+falgat -1507.3,539,115.916 -454
+falgat -1672.64,477.383,658.763 -358
+falgat -1665.57,424,1373.88 -361
+rhino 241.674,51,450.927 0
+rhino -1355.6,51,502.311 0
+rhino -504.388,51,-703.91 0
+zombie -271.736,-111,-698.964 0
+zombie -936.176,-111,-694.394 0
+rhino -500.931,-125,815.703 0
+zombie -616.77,547.211,-363.788 0
+medikitEx -429.469,261,29.7336 -419 15
+medikitEx 117.642,21,549.371 -220 30
+medikitEx -1036.42,149,-35.0231 -188 15
+medikitEx -1199.16,21,-498.2 -392 15
+medikitEx -574.567,218.687,-293.648 -366 15
+medikitEx -576.397,503.478,-338.1 -359 15
+medikitEx -1672.38,325,94.1525 -456 15
+medikitEx 245.321,21,-139.81 107 15
+medikitEx -524.645,149,422.336 -815 15
+medikitEx -320.193,-155,-693.531 0 15
+ammunation_shot_gun -617.398,96.8028,2259.95 0 15
+ammunation_machine_gun -495.72,-155,593.16 0 15
+ammunation_machine_gun -612.413,149,416.784 0 15
+ammunation_rifle_gun -520.342,206.825,-305.346 0 15
+ammunation_rifle_gun -1305.94,21,-465.091 0 15
+ammunation_shot_gun -673.9,-155,-689.533 0 15
+ammunation_machine_gun -909.116,-155,-691.14 0 15
+ammunation_rifle_gun -809.524,-155,-689.048 0 15
+ammunation_shot_gun -1254.14,504,61.3463 0 15
+ammunation_shot_gun -1267.4,21,583.812 0 15
+ammunation_machine_gun -1469.08,21,223.737 0 500
+armour -440.466,-155,-686.437 0 5
+armour -616.371,-155,819.2 0 95
+armour -1672.13,389,1236.72 0 15
+armour -450.922,261,144.169 0 25

@@ -1,0 +1,1 @@
+Please see ares\media\models and texture license\your texture.txt

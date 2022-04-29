@@ -1,0 +1,13 @@
+--[[
+Script name:
+Author: Mancuso Raffaele
+Script for Ares version: 0.3
+Date:10 August 2006
+Time: 16:21
+License: public domain (no license)
+Comment: This script set the dimension of the "specular hightlights" effect
+if specular hightlights are actived. Modify those values to
+make weapon and\or enemies more or less afected by specular highlights
+--]]
+AresWeaponSetShininess(10.5)
+AresEnemiesSetShininess(0)

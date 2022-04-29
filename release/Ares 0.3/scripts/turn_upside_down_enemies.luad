@@ -1,0 +1,17 @@
+--[[
+Script name:
+Author: Mancuso Raffaele
+Script for Ares version: 0.3
+Date: 31 July 2006
+Time: 15.50
+License: public domain (no license)
+Comment: This script turns upside-down all the enemies
+For more information see "Ares' scripting guide"
+--]]
+
+enemie_count=AresGetTotalEnemieCount()-1
+for i=0,enemie_count,1 do
+	rot=AresGetEnemieRot(i)
+	rot.x=rot.x+180
+	AresSetEnemieRot(i,rot)
+end

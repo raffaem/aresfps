@@ -1,0 +1,15 @@
+--[[
+Script name:
+Author: Mancuso Raffaele
+Script for Ares version: 0.3
+Date: 31 July 2006
+Time: 15.50
+License: public domain (no license)
+Comment: Move the weapon on y
+For more information see "Ares' scripting guide"
+--]]
+
+w_pos=AresGetWeaponPos()
+w_pos.y=w_pos.y+999
+print(w_pos.y)
+AresSetWeaponPos(w_pos)

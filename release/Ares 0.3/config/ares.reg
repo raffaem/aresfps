@@ -1,0 +1,7 @@
+REGEDIT
+HKEY_CLASSES_ROOT\.aresmap = AresFPSMapFile
+HKEY_CLASSES_ROOT\.aresm2 = AresFPSMapFile
+HKEY_CLASSES_ROOT\AresFPSMapFile\shell\open\command = "D:\data\Ares 0.3\ares.exe" %1
+HKEY_CLASSES_ROOT\AresFPSMapFile = Ares map
+HKEY_CLASSES_ROOT\MancusoRaffaele\AresFPS\Ver = 0.3
+HKEY_CLASSES_ROOT\MancusoRaffaele\AresFPS\InstallDir = D:\data\Ares 0.3

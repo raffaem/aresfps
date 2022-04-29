@@ -1,0 +1,26 @@
+ver 0.3
+diffuselight no
+weapon -307.636,52.6976,521.448 90
+camera 1137.18,45.3508,463.676 0,0,0
+addzip tombs_graveyard.zip
+levelmodel graveyard.bsp graveyard.bsp 0,0,0 0,0,0 1,1,1
+zombie 493.36,49,501.918 0
+rhino 1114.52,35,476.686 0
+zombie 1347.59,57,541.737 0
+falgat 1376.09,40,-123.975 0
+zombie 2214.9,49,-469.582 0
+zombie 1959.42,49,468.468 0
+rhino 1451.85,33.5257,367.093 0
+medikitEx 1280.99,5,356.275 0 30
+medikitEx 1277.08,5,771.091 0 45
+ammunation_shot_gun -308.287,5,514.121 0 15
+ammunation_rifle_gun 1226,25,587.124 0 15
+ammunation_machine_gun 1496.73,25,349.687 0 15
+armour 1461.48,45,543.769 0 15
+armour 1028.5,5,680.278 0 15
+armour 1369.46,53,418.76 0 15
+light 206.887,162.673,540.988 100
+light 1255.5,516.098,253.355 100
+light 1373.73,588.967,959.292 100
+light 1701.28,118.281,656.291 75
+light 1513.03,454.42,-302.724 100
